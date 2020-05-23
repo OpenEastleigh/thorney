@@ -1,0 +1,65 @@
+/*
+ * Local css reset based on http://meyerweb.com/eric/tools/css/reset/
+ */
+
+@mixin reset() {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  @include reset();
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include reset();
+  line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include reset();
+}
+
+p, a, span {
+  @include reset();
+}
+
+img {
+  @include reset();
+}
+
+ul, li {
+  @include reset();
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  @include reset();
+}
+
+article, aside, footer, header, nav, section, div {
+  @include reset();
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

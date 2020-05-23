@@ -1,11 +1,15 @@
+@import "reset.scss";
+@import "normalize.scss";
+@import "typography.scss";
+
 body {
   background-color: #eeeeee;
 }
 
 nav {
   background-color: #222;
-}
 
-nav > img {
-  display: inline-block;
+  img {
+    display: inline-block;
+  }
 }
